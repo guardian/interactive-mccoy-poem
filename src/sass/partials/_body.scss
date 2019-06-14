@@ -1,14 +1,31 @@
 .uit-poem {
     font-family: 'Guardian Egyptian Web';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 42px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.3;
     color: $c-black;
     margin-bottom: 2em;
+
+    @include mq(mobileLandscape) {
+        font-size: 16px;
+    }
+
+    @include mq(tablet) {
+        font-size: 24px;
+    }
 }
 
 .uit-poem__indent {
     display: block;
+    padding: 12px 0;
+
+    @include mq(mobileLandscape) {
+        padding: 13px 0;
+    }
+
+    @include mq(tablet) {
+        padding: 16px 0;
+    }
 }
 
 .uit-poem__indent--1 {
@@ -26,4 +43,17 @@
 .uit-poem__spacer {
     width: 1.8em;
     display: inline-block;
+}
+
+.uit-bio {
+    border-top: 1px solid $c-light-grey;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 80px;
+    margin-top: 24px;
+    font-family: 'Guardian Sans Web';
+    font-size: 14px;
+    line-height: 1.3;
+    margin-bottom: 0;
+    color: $c-dark-grey;
 }
