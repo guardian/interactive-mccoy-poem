@@ -56,4 +56,15 @@
     line-height: 1.3;
     margin-bottom: 0;
     color: $c-dark-grey;
+
+    a {
+        color: $c-dark-grey;
+        font-weight: bold;
+        border-bottom: 1px solid $c-red;
+
+        &:hover {
+            text-decoration: none;
+            color: $c-red;
+        }
+    }
 }
