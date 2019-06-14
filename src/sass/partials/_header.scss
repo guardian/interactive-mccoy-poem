@@ -60,10 +60,16 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 1.2;
-    padding-bottom: 72px;
 
     @include mq(tablet) {
         font-size: 24px;
+    }
+}
+
+.uit-header .uit-share {
+    padding-bottom: 72px;
+
+    @include mq(tablet) {
         padding-bottom: 120px;
     }
 }
